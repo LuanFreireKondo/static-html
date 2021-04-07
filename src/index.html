@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt">
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+<!-- theme color -->
+<meta name="theme-color" content="#9C67FC">
+
+<!-- facebook open graph -->
+<meta property="og:title" content="">
+<meta property="og:type" content="website">
+<meta property="og:description" content="">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<title><%= htmlWebpackPlugin.options.title %></title>
+
+<meta name="description" content="generate static html using webpack 📦">
+
+<link rel="canonical" href="<%= htmlWebpackPlugin.options.url %>">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WWTM3QK');
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- manifest -->
+<link rel="manifest" href="assets/manifest.json">
+
+<!-- ios icon -->
+<link rel="apple-touch-icon" href="images/touch-icon-iphone.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/touch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="167x167" href="images/touch-icon-ipad-retina.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/touch-icon-iphone-retina.png">
+
+<!-- css -->
+<link rel="preload" as="style" href="assets/style.css">
+
+<!-- google fonts -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWTM3QK" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header>
+    HEADER
+  </header>
+
+  <main>
+    <section>
+      <h1>Título da página</h1>
+  
+      <article>
+        <p>Conteúdo do artigo...</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    FOOTER
+  </footer>
+
+  <!-- javascript -->
+  <script src="sw.js" async></script>
+</body>
+</html>

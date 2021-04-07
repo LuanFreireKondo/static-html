@@ -1,0 +1,21 @@
+{
+    "short_name": "html",
+    "name": "html",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#9C67FC",
+    "theme_color": "#9C67FC",
+    "icons": [
+        {
+          "src": "logo-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+          "src": "logo-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/?source=homescreen"
+}
