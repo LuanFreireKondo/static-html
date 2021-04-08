@@ -47,7 +47,7 @@ npm run build-prod
 
 ```
 
-## Dist folder
+### Dist
 
 ```
 .
@@ -62,3 +62,9 @@ npm run build-prod
 │   ├── robots.txt
 │   └── sw.js
 ```
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2021-present, Luan Freire Kondo
