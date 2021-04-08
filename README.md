@@ -1,6 +1,12 @@
 # Static html
 
-generate static html using webpack 📦 
+generate a `/dist` folder with all static html assets `ready to deploy` on `s3` bucket 🚀 📦 
+
+### Technologies
+
+- [**Webpack**](https://webpack.js.org) - Generate your static module bundler 
+- [**NodeJS**](https://nodejs.org) - JavaScript runtime built on Chrome's V8 JavaScript engine
+- [**SASS**](http://sass-lang.com) - CSS with superpowers
 
 ### Environments
 
@@ -17,7 +23,7 @@ npm install
 
 ```
 
-### How to run
+### Run
 
 ``` bash
 
@@ -31,4 +37,28 @@ npm start
 
 http://localhost:9090/
 
+```
+
+### Build
+
+``` bash
+
+npm run build-prod
+
+```
+
+## Dist folder
+
+```
+.
+├── /dist                     # Minified, optimized and compiled files
+│   ├── /assets
+│   │   ├── logo-192x192.png           
+│   │   ├── logo-512x512.png
+│   │   ├── manifest.json
+│   │   └── style.css
+│   ├── home.js
+│   ├── index.html
+│   ├── robots.txt
+│   └── sw.js
 ```
