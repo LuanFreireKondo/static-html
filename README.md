@@ -4,9 +4,8 @@ generate a `/dist` folder with all static html assets `ready to deploy` on `s3` 
 
 ### Technologies
 
-- [**Webpack**](https://webpack.js.org) - Generate your static module bundler 
+- [**Webpack 5**](https://webpack.js.org) - Generate your static module bundler 
 - [**NodeJS**](https://nodejs.org) - JavaScript runtime built on Chrome's V8 JavaScript engine
-- [**SASS**](http://sass-lang.com) - CSS with superpowers
 
 ### Environments
 
