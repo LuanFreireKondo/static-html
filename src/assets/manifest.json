@@ -5,6 +5,11 @@
     "orientation": "portrait",
     "background_color": "#9C67FC",
     "theme_color": "#9C67FC",
+    "prefer_related_applications": true,
+    "related_applications": {
+      "platform": "play",
+      "id": "br.com.zap.imoveis"
+    },
     "icons": [
         {
           "src": "logo-192x192.png",
