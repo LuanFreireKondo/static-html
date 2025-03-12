@@ -20,6 +20,8 @@
 
 <meta name="description" content="generate static html using webpack 📦">
 
+<meta name="apple-itunes-app" content="app-id=514620313">
+
 <link rel="canonical" href="<%= htmlWebpackPlugin.options.url %>">
 
 <!-- manifest -->
@@ -37,6 +39,38 @@
 <!-- google fonts -->
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
 
+<script>
+  let deferredPrompt;
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    deferredPrompt = e;
+  });
+
+  function callApp() {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+    }
+  }
+
+  async function shareClick() {
+    try {
+      await navigator.share({
+        title: 'Confira este link',
+        text: 'Confira este imóvel em...',
+        url: 'https://www.zapimoveis.com.br/imovel/venda-sobrados-3-quartos-limao-zona-norte-sao-paulo-sp-210m2-id-2574181803/',
+      })
+    } catch (error) {
+      navigator.clipboard.writeText('https://www.zapimoveis.com.br/imovel/venda-sobrados-3-quartos-limao-zona-norte-sao-paulo-sp-210m2-id-2574181803')
+    }
+}
+</script>
+
+<style type="text/css">
+  article ul li {
+    margin: 12px 0;
+  }
+</style>
+
 </head>
 <body>
   <header>
@@ -49,6 +83,33 @@
   
       <article>
         <p>Conteúdo do artigo...</p>
+        <ul>
+          <li>
+            <a href="https://www.zapimoveis.com.br/imovel/venda-sobrados-3-quartos-limao-zona-norte-sao-paulo-sp-210m2-id-2574181803/" target="_blank">
+              link 1
+            </a>
+          </li>
+          <li>
+            <a href="https://www.zapimoveis.com.br/imovel/venda-apartamento-2-quartos-com-piscina-limao-zona-norte-sao-paulo-sp-50m2-id-2427405125/" target="_blank">
+              link 2
+            </a>
+          </li>
+          <li>
+            <a href="https://www.zapimoveis.com.br/venda/apartamentos/sp+sao-paulo/" target="_blank">
+              link 3
+            </a>
+          </li>
+          <li>
+            <button type="button" onclick="callApp()">
+              Clique aqui e baixe o app
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="shareClick()">
+              Compartilhe
+            </button>
+          </li>
+        </ul>
       </article>
     </section>
   </main>
