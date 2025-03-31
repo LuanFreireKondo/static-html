@@ -67,11 +67,10 @@
   async function installedApps() {
     try {
       const relatedApps = await navigator.getInstalledRelatedApps()
-      alert(relatedApps)
 
       relatedApps.forEach((app) => {
         const li = document.createElement('li')
-        li.innerHTML = app
+        li.innerHTML = app?.id
         document.querySelector('.installed-apps').appendChild(li)
       })
     } catch (error) {
@@ -128,7 +127,6 @@
           </li>
         </ul>
 
-        <h2>Apps instalados:</h2> 
         <ul class="installed-apps"></ul>
       </article>
     </section>
