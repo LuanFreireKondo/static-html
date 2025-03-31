@@ -67,11 +67,11 @@
   async function installedApps() {
     try {
       const relatedApps = await navigator.getInstalledRelatedApps()
-      console.log('relatedApps:', relatedApps)
+      alert(relatedApps)
 
       relatedApps.forEach((app) => {
         const li = document.createElement('li')
-        li.innerHTML = app.id
+        li.innerHTML = app
         document.querySelector('.installed-apps').appendChild(li)
       })
     } catch (error) {
