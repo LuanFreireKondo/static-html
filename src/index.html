@@ -64,17 +64,21 @@
     }
   }
 
-  try {
-    const relatedApps = await navigator.getInstalledRelatedApps()
+  async function installedApps() {
+    try {
+      const relatedApps = await navigator.getInstalledRelatedApps()
 
-    relatedApps.forEach((app) => {
-      const li = document.createElement('li')
-      li.innerHTML = app.id
-      document.querySelector('.installed-apps').appendChild(li)
-    })
-  } catch (error) {
-    console.error('Error:', error)
+      relatedApps.forEach((app) => {
+        const li = document.createElement('li')
+        li.innerHTML = app.id
+        document.querySelector('.installed-apps').appendChild(li)
+      })
+    } catch (error) {
+      console.error('Error:', error)
+    }
   }
+
+  installedApps()
 </script>
 
 <style type="text/css">
