@@ -62,7 +62,19 @@
     } catch (error) {
       navigator.clipboard.writeText('https://www.zapimoveis.com.br/imovel/venda-sobrados-3-quartos-limao-zona-norte-sao-paulo-sp-210m2-id-2574181803')
     }
-}
+  }
+
+  try {
+    const relatedApps = await navigator.getInstalledRelatedApps()
+
+    relatedApps.forEach((app) => {
+      const li = document.createElement('li')
+      li.innerHTML = app.id
+      document.querySelector('.installed-apps').appendChild(li)
+    })
+  } catch (error) {
+    console.error('Error:', error)
+  }
 </script>
 
 <style type="text/css">
@@ -110,6 +122,9 @@
             </button>
           </li>
         </ul>
+
+        <h2>Apps instalados:</h2> 
+        <ul class="installed-apps"></ul>
       </article>
     </section>
   </main>
