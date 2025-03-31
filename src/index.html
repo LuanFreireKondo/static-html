@@ -67,7 +67,7 @@
   async function installedApps() {
     try {
       const relatedApps = await navigator.getInstalledRelatedApps()
-      console.error('relatedApps:', relatedApps)
+      console.log('relatedApps:', relatedApps)
 
       relatedApps.forEach((app) => {
         const li = document.createElement('li')
