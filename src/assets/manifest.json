@@ -7,17 +7,16 @@
     "theme_color": "#9C67FC",
     "icons": [
         {
-          "src": "logo-192x192.png",
+          "src": "xyz/logo-192x192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-          "src": "logo-512x512.png",
+          "src": "xyz/logo-512x512.png",
             "type": "image/png",
             "sizes": "512x512"
         }
     ],
-    "id": "/?source=homescreen",
     "start_url": "/?source=homescreen",
     "prefer_related_applications": true,
     "related_applications": [
