@@ -1,0 +1,26 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "br.com.zap.imoveis",
+      "sha256_cert_fingerprints": [
+        "E6:CB:1D:65:C6:39:D4:9F:20:27:96:6C:31:CF:65:5B:EE:E7:8E:26:E1:79:EC:DD:59:FE:30:0A:01:52:43:1F"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "br.com.zap.imoveis.development",
+      "sha256_cert_fingerprints": [
+        "E0:D6:93:9F:8F:6F:A3:97:15:6F:C3:37:B2:F0:05:5C:91:41:3A:3F:44:72:2F:E2:F8:24:6F:03:27:22:A4:CE"
+      ]
+    }
+  }
+]
