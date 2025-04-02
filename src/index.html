@@ -52,6 +52,11 @@
     }
   }
 
+  function testeLink(e) {
+    e.preventeDefault()
+    window.open('https://www.zapimoveis.com.br/aluguel/?itl_id=1000064&itl_name=zap_-_link-header_alugar_to_zap_resultado-pesquisa', '_self')
+  }
+
   async function shareClick() {
     try {
       await navigator.share({
@@ -100,7 +105,7 @@
       <article>
         <p>Conteúdo do artigo...</p>
         <ul>
-          <li class="menu__options__item secondary" role="menuitem"><div><a class="olx-core-link olx-core-link--grey olx-core-link--small" href="https://www.zapimoveis.com.br/aluguel/?itl_id=1000064&amp;itl_name=zap_-_link-header_alugar_to_zap_resultado-pesquisa" target="_self">Alugar</a></div></li>
+          <li class="menu__options__item secondary" role="menuitem"><div><a onclick="testeLink" class="olx-core-link olx-core-link--grey olx-core-link--small" href="https://www.zapimoveis.com.br/aluguel/?itl_id=1000064&amp;itl_name=zap_-_link-header_alugar_to_zap_resultado-pesquisa" target="_self">Alugar</a></div></li>
           <li>
             <a href="https://www.zapimoveis.com.br/venda/apartamentos/sp+sao-paulo/" target="_blank">
               link - RP - blank
