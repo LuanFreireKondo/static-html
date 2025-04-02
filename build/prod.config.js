@@ -72,7 +72,7 @@ module.exports = {
         },
         { 
           from: 'src/.well-known', 
-          to: '.well-known',
+          to: '/.well-known',
         },
         { 
           from: 'src/robots.txt', 
