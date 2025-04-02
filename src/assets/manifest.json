@@ -19,7 +19,7 @@
     ],
     "id": "/?source=homescreen",
     "start_url": "/?source=homescreen",
-    "prefer_related_applications": false,
+    "prefer_related_applications": true,
     "related_applications": [
       {
         "platform": "play",
