@@ -71,6 +71,10 @@ module.exports = {
           to: 'assets',
         },
         { 
+          from: 'src/.well-known', 
+          to: '.well-known',
+        },
+        { 
           from: 'src/robots.txt', 
           to: '',
         },
